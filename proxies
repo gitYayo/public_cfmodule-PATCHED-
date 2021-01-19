@@ -1,0 +1,12 @@
+Paste proxies below.
+
+example -
+
+1.1.1.1:80
+2.2.2.2:80
+3.3.3.3:8080
+8.8.8.8:1192
+
+(internet_protocol)(colon)(port)
+
+^Delete all texts before pasting proxies!
