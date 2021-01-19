@@ -35,7 +35,17 @@ def main():
 	url = str(input(Fore.GREEN + "Url : " + Fore.WHITE))
 	ssl = str(input(Fore.GREEN + "Enable SSL Mode ? (y/n) : " + Fore.WHITE))
 	ge = str(input(Fore.GREEN + "Get New Proxies List ? (y/n) : " + Fore.WHITE))
-
+	if ge =='y':
+		if ssl == 'y':
+			rsp = requests.get('https://api.proxyscrape.com/?request=displayproxies&proxytype=http&country=all&anonymity=all&ssl=yes&timeout=2000') #Code By Original COCAINE
+			with open('proxies.txt','wb') as fp:
+				fp.write(rsp.content)
+				print(Fore.CYAN + "Sucess Get Https Proxies List !")
+		else:
+			rsp = requests.get('https://api.proxyscrape.com/?request=displayproxies&proxytype=http&country=all&anonymity=all&ssl=all&timeout=1000') #Code By Original COCAINE
+			with open('proxies.txt','wb') as fp:
+				fp.write(rsp.content)
+				print(Fore.CYAN + "Sucess Get Http Proxies List !")
 	else:
 		pass
 	list = str(input(Fore.GREEN + "List (proxies.txt) : " + Fore.WHITE))
