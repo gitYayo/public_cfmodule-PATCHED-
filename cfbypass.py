@@ -12,7 +12,7 @@ print(Fore.YELLOW + """
 | |___|  _|   | |_) || | |  __/ ___ \ ___) |__) |
  \____|_|     |____/ |_| |_| /_/   \_\____/____/
 """)
-print("Developed by Original COCAINE? - 07/22/2018")
+print("Developed by Original COCAINE #Yayo - 07/22/2018")
 
 def opth():
 	for a in range(thr):
