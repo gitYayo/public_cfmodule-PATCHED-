@@ -1,4 +1,4 @@
-# CF-Bypass-Dos
+# CF-Bypass
 Simple cfscrape module.
 For Cloudflare Bypass, please use SOCKs5 Proxies from a list the user has the rights to.
 
