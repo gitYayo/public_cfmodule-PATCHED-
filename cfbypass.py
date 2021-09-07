@@ -5,6 +5,7 @@ import time
 import requests
 import threading
 from colorama import Fore
+#Sometimes ascii cannot encode. can fix by either removing or adding new characters!
 print(Fore.RED + """  
 
  ██████╗███████╗██████╗ ██╗   ██╗██████╗  █████╗ ███████╗███████╗
